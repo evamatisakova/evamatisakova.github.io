@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Aramis Italic";
+  src: url("/fonts/aramisi.eot?") format("eot"),
+  url("/fonts/aramisi.woff") format("woff"),
+  url("/fonts/aramisi.ttf") format("truetype"),
+  url("/fonts/aramisi.svg#AramisItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gatwick Regular";
+  src: url("/fonts/gatwick.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "TWKEverett Light";
+  src: url("/fonts/TWKEverett-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+//@import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+) !default;
+
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group"; // Requires forms
+// @import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+//@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+//@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/print";
+
+
+//
+// Custom styles
+//
+
+//@import "icon-list";
+
+body {
+  font-family: "TWKEverett Light";
+  font-size: 1.5rem;
+
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+
+}
+
+.italic {
+  font-family: "Aramis Italic", serif;
+  font-size: 120%;
+}
+
+header {
+  position: relative;
+  padding-bottom: 12vw;
+
+  .heading {
+    position: absolute;
+    width: 100%;
+    left: 2rem;
+    bottom: 0;
+  }
+
+  &.home {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    //padding-bottom: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 3rem 1.5rem;
+    background: white;
+
+    h1{
+      position: relative;
+      text-align: center;
+    }
+  }
+
+
+  font-family: "Gatwick Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+
+  &.homepage {
+
+  }
+
+  img.main {
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    width: 100%;
+  }
+
+  img.arrow {
+    position: absolute;
+    left: 20vw;
+    bottom: 15vw;
+  }
+
+  h1 {
+    margin: auto;
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 10vw;
+    bottom: 0;
+  }
+
+}
+
+main{
+  padding: 0 2rem;
+}
+
+main.home {
+  position: relative;
+  margin-top: 100vh;
+  padding-top: 200px;
+
+  #gradient {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .7));
+  }
+
+  section {
+    background: rgba(255, 255, 255, .7);
+  }
+
+  .row {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
+  .row:first-of-type {
+    margin-top: 0;
+  }
+}
+
+
+
+nav {
+  text-transform: lowercase;
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+}
+
+// Style Bootstrap icons
+.bi {
+  fill: currentcolor;
+}
+
+.mt-20 {
+  margin-top: 20rem !important;
+}
+
+footer {
+  background: white;
+  padding: 4rem 0 1rem 0;
+  height: 100vh;
+  position: relative;
+
+  //font-family: "Gatwick Regular", sans-serif;
+  //font-size: 1rem;
+
+
+  & > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //& > div{
+    //  margin-top: 0;
+    //  margin-bottom: 0;
+    //}
+  }
+
+  h3 {
+    font-family: "Gatwick Regular", sans-serif;
+    font-size: 5vw;
+  }
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .arrow {
+    height: 1.5rem;
+
+    &.arrow-right {
+      transform: rotate(270deg);
+      padding-left: 3px;
+    }
+
+    &.arrow-up {
+      height: 1.5rem;
+      transform: rotate(180deg);
+      padding-right: 3px;
+    }
+  }
+
+
+  div {
+    margin: auto;
+  }
+
+
+  .watermark {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 200px;
+
+    font-family: "Gatwick Regular", sans-serif;
+  }
+}
+
+p{
+  margin: 5rem 0;
+  font-size: 3rem;
+}
