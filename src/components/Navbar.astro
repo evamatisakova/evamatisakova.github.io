@@ -1,0 +1,36 @@
+---
+const {color, background, homeLink} = Astro.props
+---
+
+    <nav data-background={background} class={`navbar fixed-top navbar-expand-lg navbar-${color}`} >
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href={homeLink}>
+                <img src={`/img/em-${color}.svg`} alt="" style="height:1.5rem"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="navbar-brand" href={homeLink}>
+                            <img src={`/img/em-${color}.svg`} alt="" style="height:1.5rem"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#interior">interior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#product">product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

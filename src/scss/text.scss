@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+h1 {
+  margin: auto;
+  margin-bottom: 2rem;
+  font-size: 10vw;
+}
+
+
+h1.italic, h2.italic {
+  font-family: "Aramis Italic", serif;
+  font-size: 120%;
+}
+
+p {
+  margin-bottom: 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+}
+
+
+small {
+  font-size: 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 1.5rem;
+  }
+}

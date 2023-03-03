@@ -1,0 +1,25 @@
+---
+import Layout from './Layout.astro';
+import Navbar from '../components/Navbar.astro';
+
+const {title, img} = Astro.props
+
+---
+
+    <Layout
+        {...{title}}
+    >
+        <header id="header">
+            <img class="main" src={img.src} alt={img.alt}/>
+            <a href="#main">
+                <img class="arrow" src="/img/arrow-light.svg" alt=""/>
+            </a>
+        </header>
+
+        <Navbar color="dark" background="dark" homeLink="/"/>
+
+        <main id="main">
+            <slot/>
+        </main>
+    </Layout>
+

@@ -1,232 +1,151 @@
 ---
-import '../scss/style.scss';
-
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
+    <Layout>
+        <header class="home">
+            <h1>eva.<span class="italic">m</span>atisakova</h1>
+            <h2 class="text-right">design</h2>
+        </header>
 
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-                {/*<link rel="stylesheet" href="assets/css/starter.css">*/}
-                <title>eva.matisakova portfolio</title>
-    </head>
-    <body>
+        <Navbar color="light" background="light" homeLink="#home"/>
 
-    <header class="home">
-        <h1>eva.<span class="italic">m</span>atisakova</h1>
-        <h2 class="text-right">design</h2>
-    </header>
+        <main id="header" class="home">
+            <div id="gradient"></div>
+            <section id="interior">
+                <h2 class="d-none">interior</h2>
+                <div class="container-fluid">
+                    <div class="row  justify-content-between">
+                        <div class="col-12 col-md-6">
+                            <img src="/img/hp/HP-05.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand d-lg-none" href="#">
-                <img src="/img/em.svg" alt="" style="height:1.5rem">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="navbar-brand" href="#">
-                            <img src="/img/em.svg" alt="" style="height:1.5rem">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#interior">interior</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#product">product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="home">
-        <div id="gradient"></div>
-        <section id="interior">
-            <h2 class="d-none">interior</h2>
-            <div class="container-fluid">
-                <div class="row  justify-content-between">
-                    <div class="col-12 col-md-6">
-                        <img src="/img/hp/HP-05.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="col-12 col-md-4 align-self-center">
+                            <img src="/img/hp/HP-06.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-4 align-self-center">
-                        <img src="/img/hp/HP-06.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-8 offset-md-4">
-                        <img src="/img/hp/HP-07.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <img src="/img/hp/HP-08.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-4">
-                        <img src="/img/hp/HP-09.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-8 offset-md-4">
+                            <img src="/img/hp/HP-07.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-6 mt-20">
-                        <img src="/img/hp/HP-10.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="product">
-            <h2 class="d-none">product</h2>
-            <div class="container-fluid">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-6">
-                        <img src="/img/hp/HP-11.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="/img/hp/HP-08.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-4 align-self-center">
-                        <img src="/img/hp/HP-12.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-4">
+                            <img src="/img/hp/HP-09.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-20">
+                            <img src="/img/hp/HP-10.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section id="product">
+                <h2 class="d-none">product</h2>
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6">
+                            <img src="/img/hp/HP-11.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
 
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-6">
-                        <img src="/img/hp/HP-13.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <img src="/img/hp/HP-14.jpeg" alt="artinpark" class="img-fluid"/>
-                        <h3>Art In Park</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <h2 class="d-none">about</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="/img/eva.jpg" alt="">
+                        <div class="col-12 col-md-4 align-self-center">
+                            <a href="/art-in-park/">
+                                <img src="/img/hp/HP-12.jpeg" alt="artinpark" class="img-fluid"/>
+                                <h3>Art In Park</h3>
+                            </a>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
 
-                    <div class="col">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula dapibus tempus.
-                            Mauris nec placerat
-                            nunc. Integer ante arcu, feugiat in neque vel, consequat blandit nisl. Nam scelerisque
-                            luctus tortor, eget
-                            sodales massa lobortis ut. Mauris et purus viverra, ultrices nisi id, iaculis justo.
-                            Phasellus libero
-                            libero, sodales a congue eu, dictum ultricies risus. Donec porttitor nunc eget lectus
-                            tincidunt pulvinar.
-                            Nulla sed urna in odio placerat tincidunt nec tristique mi. Curabitur tortor mi, efficitur
-                            quis diam in,
-                            fringilla feugiat erat.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6 offset-md-6">
+                            <img src="/img/hp/HP-13.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
 
-                        <p>Etiam facilisis felis ut lectus auctor, vel sodales elit vestibulum. Cras bibendum
-                            pellentesque elit vel
-                            vestibulum. Morbi at tristique tellus. Praesent eget arcu tincidunt, tempor purus a, ornare
-                            quam. Vestibulum
-                            sit amet mi at purus sollicitudin tempor et sed orci. Phasellus vel tristique lorem. Ut at
-                            ex et odio
-                            eleifend tincidunt. Integer placerat ante in orci dapibus iaculis. Nam neque nibh, iaculis
-                            sed sodales ut,
-                            tincidunt auctor felis. Aliquam erat volutpat.</p>
-
-                        <p>Morbi pretium arcu tortor, ac hendrerit massa convallis vel. Vivamus odio mi, efficitur at
-                            magna a,
-                            volutpat fringilla nisi. Cras vel orci felis. Nunc at metus ut libero tincidunt ultrices
-                            quis eu massa.
-                            Donec porta sapien eu posuere posuere. Nunc et eros pulvinar, posuere diam vel, lobortis
-                            dolor. Maecenas
-                            pulvinar augue sem.</p>
-
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <img src="/img/hp/HP-14.jpeg" alt="artinpark" class="img-fluid"/>
+                            <h3>Art In Park</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+            <section id="about">
+                <h2 class="d-none">about</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/img/eva.jpg" alt="">
+                        </div>
 
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula dapibus tempus.
+                                Mauris nec placerat
+                                nunc. Integer ante arcu, feugiat in neque vel, consequat blandit nisl. Nam scelerisque
+                                luctus tortor, eget
+                                sodales massa lobortis ut. Mauris et purus viverra, ultrices nisi id, iaculis justo.
+                                Phasellus libero
+                                libero, sodales a congue eu, dictum ultricies risus. Donec porttitor nunc eget lectus
+                                tincidunt pulvinar.
+                                Nulla sed urna in odio placerat tincidunt nec tristique mi. Curabitur tortor mi,
+                                efficitur
+                                quis diam in,
+                                fringilla feugiat erat.</p>
 
-    <footer id="contact">
-        <!--  <div class="watermark">e<span class="italic">m</span></div>-->
-        <div class="container container-xl">
-            <div>
-                <h3>eva.<span class="italic">m</span>atisakova</h3>
-                <p>Lipsum</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <img src="/img/em.svg" alt="" style="height:1.5rem">
-                        <br/>
-                        portfolio
+                            <p>Etiam facilisis felis ut lectus auctor, vel sodales elit vestibulum. Cras bibendum
+                                pellentesque elit vel
+                                vestibulum. Morbi at tristique tellus. Praesent eget arcu tincidunt, tempor purus a,
+                                ornare
+                                quam. Vestibulum
+                                sit amet mi at purus sollicitudin tempor et sed orci. Phasellus vel tristique lorem. Ut
+                                at
+                                ex et odio
+                                eleifend tincidunt. Integer placerat ante in orci dapibus iaculis. Nam neque nibh,
+                                iaculis
+                                sed sodales ut,
+                                tincidunt auctor felis. Aliquam erat volutpat.</p>
+
+                            <p>Morbi pretium arcu tortor, ac hendrerit massa convallis vel. Vivamus odio mi, efficitur
+                                at
+                                magna a,
+                                volutpat fringilla nisi. Cras vel orci felis. Nunc at metus ut libero tincidunt ultrices
+                                quis eu massa.
+                                Donec porta sapien eu posuere posuere. Nunc et eros pulvinar, posuere diam vel, lobortis
+                                dolor. Maecenas
+                                pulvinar augue sem.</p>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <a href="https://www.instagram.com/evankaaaa/" target="_blank" rel="noopener noreferrer">
-                        instagram
-                        <img class="arrow arrow-right" src="/img/arrow-dark.svg" alt="arrow-right"/>
-                    </a>
-                    <br/>
-                    <a href="https://www.instagram.com/evankaaaa/" target="_blank" rel="noopener noreferrer">
-                        linkedin
-                        <img class="arrow arrow-right" src="/img/arrow-dark.svg" alt="arrow-right"/>
-                    </a>
-                </div>
-                <div class="col col-auto">
-                    <a href="mailto:eva.matisakova@gmail.com">
-                        eva.matisakova@gmail.com
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    &copy; sice 2023 All Rights Reserved
-                </div>
-                <div class="col text-right">
-                    <a href="#home">
-                        Back to top
-                        <img class="arrow arrow-up" src="/img/arrow-dark.svg" alt="arrow-up"/>
-                    </a>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
+    </Layout>
 
 
-    </footer>
 
-    <script src="../js/script.js"></script>
-
-    </body>
-    </html>

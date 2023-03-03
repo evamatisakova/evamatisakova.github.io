@@ -1,0 +1,63 @@
+footer {
+  background: white;
+  padding: 4rem 0 1rem 0;
+  height: 100vh;
+  position: relative;
+
+  //font-family: "Gatwick Regular", sans-serif;
+  //font-size: 1rem;
+
+
+  & >.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //& > div{
+    //  margin-top: 0;
+    //  margin-bottom: 0;
+    //}
+  }
+
+  h3 {
+    font-family: "Gatwick Regular", sans-serif;
+    font-size: 5vw;
+  }
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+
+  }
+
+  .arrow {
+    height: 1.5rem;
+
+    &.arrow-right {
+      transform: rotate(270deg);
+      padding-left: 3px;
+    }
+
+    &.arrow-up {
+      height: 1.5rem;
+      transform: rotate(180deg);
+      padding-right: 3px;
+    }
+  }
+
+
+  div {
+    margin: auto;
+  }
+
+
+  .watermark {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 200px;
+
+    font-family: "Gatwick Regular", sans-serif;
+  }
+}
