@@ -11,11 +11,15 @@ a {
 h1 {
   margin: auto;
   margin-bottom: 2rem;
-  font-size: 10vw;
+  font-size: 8vw;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 10.5vw;
+  }
+
 }
 
 
-h1.italic, h2.italic {
+h1 > .italic, h2 > .italic {
   font-family: "Aramis Italic", serif;
   font-size: 120%;
 }

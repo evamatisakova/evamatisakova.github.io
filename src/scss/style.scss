@@ -61,16 +61,10 @@ $container-max-widths: (
 // @import "bootstrap/scss/print";
 
 
-
-
-
 body {
   font-family: "TWKEverett Light";
   font-size: 1.5rem;
 }
-
-
-
 
 
 header {
@@ -168,11 +162,14 @@ main.home {
   padding-left: 0;
   padding-right: 0;
 
-  & > section{
+  & > section {
     padding-left: 2rem;
     padding-right: 2rem;
 
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .85);
+    @media (min-width: $breakpoint-tablet) {
+      background: rgba(255, 255, 255, .7);
+    }
   }
 
   #gradient {
@@ -181,12 +178,18 @@ main.home {
     top: 0px;
     width: 100%;
     height: 200px;
-    background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .7));
+    background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .85));
+    @media (min-width: $breakpoint-tablet) {
+      background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .7));
+    }
   }
 
   .row {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    @media (min-width: $breakpoint-tablet) {
+
+      padding-top: 300px;
+      padding-bottom: 300px;
+    }
   }
 
   .row:first-of-type {
@@ -205,12 +208,6 @@ nav {
 
 @import "./text.scss";
 @import "./footer.scss";
-
-
-
-
-
-
 
 
 @media (min-width: $breakpoint-tablet) {
