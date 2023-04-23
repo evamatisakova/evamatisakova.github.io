@@ -1,0 +1,93 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+
+
+---
+
+    <ProjectLayout
+        navColor="dark"
+        navBackground="dark"
+        title="Byt. F | Eva.Matisakova"
+        img={{
+            src: "/img/projects/byt-f/main.png",
+            alt: "Byt. F cover photo"
+        }}
+    >
+        <div class="container-fluid">
+            <h1 class="heading">Byt. F</h1>
+            <div class="row justify-content-start mb-3 mb-md-5">
+                <div class="col-12 col-md-4"><small>Rekonštrukcia mezonetu, zeit</small></div>
+                <div class="col-12 col-md-4"><small>Bratislava</small></div>
+                <div class="col-12 col-md-4"><small>2022</small></div>
+            </div>
+
+            <p>Rekonštrukcia mezonetového bývania v Bratislave ponúka dispozične zaujímavý priestor. Napriek menšej
+                rozlohe prvého podlažia tu vzniká otvorený priestor, kde sa nachádza vstup, kuchyňa a obývačka. Veľkú
+                časť tu tvorí schodisko, ktoré je funkčne využité ako úložný priestor a knižnica. Hlavný materiál je
+                bielené drevo, v kombinácii s betónovou omietkou, béžovu a sivou farbou.</p>
+
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <Img
+                        url="/img/projects/byt-f/podorys.png"
+                        alt="todo Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+                        caption="todo Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+                    />
+                </div>
+            </div>
+            <div class="row row">
+
+                <div class="col-12 col-md-6 offset-md-2 order-md-2">
+                    <Img
+                        url="/img/projects/byt-f/render-1.png"
+                        alt="todo Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+                        caption="todo Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+                    />
+                </div>
+
+                <div class="col-12 col-md-4 order-md-1">
+                    <Img
+                        url="/img/projects/byt-f/render-2.png"
+                        alt="Jedáleň"
+                        caption="Jedáleň"
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-4">
+                    <Img
+                        url="/img/projects/byt-f/render-3.png"
+                        alt="Obývacia izba"
+                        caption="Obývacia izba"
+                    />
+                </div>
+            </div>
+
+            <p>Druhé poschodie sa skladná z dvoch hlavných miestnotí - spálne a pracovne / telocvične / v budúcnosti detskej
+                izby. Šikmina v spálni rozdeľuje miestnosť na šatník a nočnú zónu. Stenu tvorí drevený obklad s
+                knižnicou a šikmina, ktorá sa zdá ako obmedzenie prietoru, ale vytvára zaujímavý pohľad priamo z
+                postele.</p>
+
+            <ImgFullWidth
+                url="/img/projects/byt-f/render-4.png"
+                alt="Spálňa"
+                caption="Spálňa"
+            />
+
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-4">
+                    <Img
+                        url="/img/projects/byt-f/render-5.png"
+                        alt="Spálňa"
+                        caption="Spálňa"
+                    />
+                </div>
+            </div>
+
+
+
+        </div>
+    </ProjectLayout>

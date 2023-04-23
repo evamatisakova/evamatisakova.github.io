@@ -1,0 +1,107 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+
+
+---
+
+    <ProjectLayout
+        navColor="dark"
+        navBackground="dark"
+        title="Byt. F | Eva.Matisakova"
+        img={{
+            src: "/img/projects/guthaus/main.png",
+            alt: "Byt. F cover photo"
+        }}
+    >
+        <div class="container-fluid">
+            <h1 class="heading">Guthaus</h1>
+            <div class="row justify-content-start mb-3 mb-md-5">
+                <div class="col-12 col-md-4"><small>Návrh bytu v novostavbe</small></div>
+                <div class="col-12 col-md-4"><small>Eva Matišáková, Zeit. architects</small></div>
+                <div class="col-12 col-md-2"><small>Bratislava</small></div>
+                <div class="col-12 col-md-2"><small>2022</small></div>
+            </div>
+
+            <p>Interiér novostavby Guthaus v Bratislave je presvetlený byt s veľkou terasou po celom jeho obvode.
+                Dispozícia bytu bola z veľkej časti ponechaná d developera, kvôli inštaláciám a stropnému chladeniu v
+                celom byte. Teplé tóny dreva a olivovej farby vytvárajú útulný priestor pre mladú rodinu. Kuchynský
+                ostrov s dreveným jedálenským stolom, tvorí centrum diania a komunikuje s pritromy obývacej izby.
+                Požiadavkou bolo navrhnúť plnohodnotné pracovné miesto, kotré bude skyté. To je súčasťou tv zostavy, s
+                výklopným stolík, skrytý za zásuvnými dvierkami.</p>
+
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-4">
+                    <Img
+                        url="/img/projects/guthaus/podorys.png"
+                        alt="Navrhovaný pôdorys bytu"
+                        caption="Navrhovaný pôdorys bytu"
+                    />
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <Img
+                        url="/img/projects/guthaus/render-obyvacia-izba.png"
+                        alt="Obývacia izba"
+                        caption="Obývacia izba"
+                    />
+                </div>
+            </div>
+
+            <ImgFullWidth
+                url="/img/projects/guthaus/render.png"
+                alt="Render"
+                caption=""
+            />
+
+            <p>V spálni je maximalizovaný úložný prietor, šatníková skriňa a nábytková zostava, ktorá vytvára čelo postele. Béžové tóny čalúnenia opticky zväčšujú prietor spálne.</p>
+
+            <p>Kúpeľne boli zariadené v štandarde bytu a tomu bol prispôso- bený návrh nábytkovej zostavy. Zatvorené aj otvorené skrinky na rastliny, pretože okno v kúpelni dáva možnosť na ich pestovanie, čo bola ďlašia podmienka pri navrhovaní - rátať s veľkým množstvorm kvetov.</p>
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <Img
+                        url="/img/projects/guthaus/render-spalna-1.png"
+                        alt="Spálňa"
+                        caption="Spálňa"
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 offset-md-8">
+                    <Img
+                        url="/img/projects/guthaus/render-spalna-2.png"
+                        alt="Spálňa"
+                        caption="Spálňa"
+                    />
+                </div>
+                <div class="col-12 col-md-4">
+                    <Img
+                        url="/img/projects/guthaus/render-kupelna-1.png"
+                        alt="Kúpeľňa"
+                        caption="Kúpeľňa"
+                    />
+                </div>
+                <div class="col-12 col-md-6 offset-md-2">
+                    <Img
+                        url="/img/projects/guthaus/render-kupelna-2.png"
+                        alt="Kúpeľňa"
+                        caption="Kúpeľňa"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <Img
+                        url="/img/projects/guthaus/render-chodba.png"
+                        alt="Vstupná chodba"
+                        caption="Vstupná chodba"
+                    />
+                </div>
+            </div>
+
+        </div>
+    </ProjectLayout>
