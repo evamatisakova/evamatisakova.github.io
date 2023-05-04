@@ -9,9 +9,9 @@ a {
 }
 
 h1 {
-  margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+
   line-height: 100%;
 
   font-family: "Gatwick", serif;
@@ -19,31 +19,32 @@ h1 {
   font-size: 8vw;
 
   @media (min-width: $breakpoint-tablet) {
+    margin-top: 5rem;
+    margin-bottom: 0;
     font-size: 10.5vw;
   }
 }
 
 h2 {
-  margin: auto;
-  margin-top: -2rem;
-  margin-bottom: 0;
+  text-align: center;
   line-height: 100%;
+  margin-bottom: 2rem;
+
 
   font-family: "NewYork", serif;
   font-weight: normal;
   font-size: 10vw;
 
   @media (min-width: $breakpoint-tablet) {
+    margin-top: -2rem auto 0 auto;
     font-size: 10.5vw;
   }
 }
 
 
 h3 {
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  text-align: left;
+  margin-left: 1rem;
   line-height: 100%;
 
   font-family: "Gatwick", serif;
@@ -51,6 +52,7 @@ h3 {
   font-size: 6vw;
 
   @media (min-width: $breakpoint-tablet) {
+    margin: 0 auto 0 0;
     font-size: 10.5vw;
   }
 }
