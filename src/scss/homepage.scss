@@ -1,11 +1,10 @@
 header.home {
   z-index: -1;
-  height: 50vh;
-  @media (min-width: $breakpoint-tablet) {
+  //height: 50vh;
+  //@media (min-width: $breakpoint-tablet) {
     height: 100vh;
-  }
+  //}
   width: 100vw;
-  //padding-bottom: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +13,10 @@ header.home {
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 3rem 0;
+  padding: 3rem 0 10vw 0;
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: 16vw;
+  }
   background: white;
 
   h3, a {
@@ -25,16 +27,19 @@ header.home {
       opacity: 0;
     }
   }
+
+
 }
 
 
 main.home {
 
   position: relative;
-  margin-top: 50vh;
+  margin-top: 100vh;
+  //margin-top: 50vh;
   padding-top: 50px;
   @media (min-width: $breakpoint-tablet) {
-    margin-top: 100vh;
+    //margin-top: 100vh;
     padding-top: 200px;
   }
   padding-left: 0;

@@ -65,6 +65,7 @@ const lastScrollTop = document.body.scrollTop;
 const subheader = document.querySelector('header>h2');
 
 function invisibleHomepageHeaderElement(element, activeSection){
+    console.log({activeSection});
     if(element){
         if(activeSection !== null) {
             element.classList.add('invisible');

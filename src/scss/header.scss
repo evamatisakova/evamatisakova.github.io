@@ -28,13 +28,25 @@ header {
 
   }
 
-  a{
+  a {
     position: absolute;
-    left: 20vw;
+    left: 10vw;
+    @media (min-width: $breakpoint-tablet) {
+      left: 20vw;
+    }
+
     bottom: 0;
     @media (min-width: $breakpoint-tablet) {
       bottom: 2rem;
     }
+
+    .arrow {
+      height: 2rem;
+      @media (min-width: $breakpoint-tablet) {
+        height: 12vw;
+      }
+    }
+
   }
 
   //
@@ -44,10 +56,5 @@ header {
   //  margin-bottom: 0;
   //}
 
-  .arrow {
-    position: absolute;
-    width: 10vw;
-    bottom: 0;
-  }
 
 }
