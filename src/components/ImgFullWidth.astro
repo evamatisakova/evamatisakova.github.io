@@ -1,0 +1,10 @@
+---
+const {url, alt, caption} = Astro.props
+---
+
+<a class="gallery" href={url}>
+    <figure>
+        <img class="img-fullwidth" src={url} alt={alt}/>
+        <figcaption>{caption}</figcaption>
+    </figure>
+</a>

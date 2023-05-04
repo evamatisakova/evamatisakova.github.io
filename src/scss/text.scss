@@ -10,27 +10,79 @@ a {
 
 h1 {
   margin: auto;
-  margin-bottom: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  line-height: 100%;
+
+  font-family: "Gatwick", serif;
+  font-weight: normal;
   font-size: 8vw;
+
   @media (min-width: $breakpoint-tablet) {
     font-size: 10.5vw;
   }
+}
 
+h2 {
+  margin: auto;
+  margin-top: -2rem;
+  margin-bottom: 0;
+  line-height: 100%;
+
+  font-family: "NewYork", serif;
+  font-weight: normal;
+  font-size: 10vw;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 10.5vw;
+  }
 }
 
 
-h1 > .italic, h2 > .italic {
-  font-family: "Aramis Italic", serif;
-  font-size: 120%;
+h3 {
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  line-height: 100%;
+
+  font-family: "Gatwick", serif;
+  font-weight: 100;
+  font-size: 6vw;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 10.5vw;
+  }
 }
 
 p {
   margin-bottom: 1rem;
+  text-align: justify ;
 
   @media (min-width: $breakpoint-tablet) {
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
   }
+}
+
+figure {
+  margin-bottom: 1rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 5rem;
+  }
+
+  figcaption{
+    //font-size:1rem;
+
+    line-height: 1.5rem;
+
+    small{
+      color: lighten(#000000, 60)
+    }
+  }
+
+
 }
 
 

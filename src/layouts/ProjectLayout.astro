@@ -2,7 +2,7 @@
 import Layout from './Layout.astro';
 import Navbar from '../components/Navbar.astro';
 
-const {title, img} = Astro.props
+const {title, img, navColor, navBackground} = Astro.props
 
 ---
 
@@ -16,7 +16,7 @@ const {title, img} = Astro.props
             </a>
         </header>
 
-        <Navbar color="dark" background="dark" homeLink="/"/>
+        <Navbar color={navColor} background={navBackground} homeLink="/"/>
 
         <main id="main">
             <slot/>

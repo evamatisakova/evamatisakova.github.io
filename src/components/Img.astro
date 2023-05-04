@@ -1,10 +1,17 @@
 ---
-const {url, alt, caption} = Astro.props
+const {url, urlThumb, alt, caption} = Astro.props
+
+const urlRealThumb = urlThumb ? urlThumb : url;
 ---
 
 <a class="gallery" href={url}>
     <figure>
-        <img class="img-fullwidth" src={url} alt={alt}/>
-        <figcaption>{caption}</figcaption>
+        <img class="img-fluid" src={urlRealThumb} alt={alt}/>
+        {
+            caption && (
+                <figcaption>{caption}</figcaption>
+            )
+        }
+
     </figure>
 </a>

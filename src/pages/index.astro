@@ -2,126 +2,348 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 ---
-    <Layout>
-        <header class="home">
-            <h1>eva.<span class="italic">m</span>atisakova</h1>
-            <h2 class="text-right">design</h2>
-        </header>
+<Layout>
+    <header class="home" id="home">
+        <h1>eva.matisakova</h1>
+        <h2>design</h2>
 
-        <Navbar color="light" background="light" homeLink="#home"/>
 
-        <main id="header" class="home">
-            <div id="gradient"></div>
-            <section id="interior">
-                <h2 class="d-none">interior</h2>
-                <div class="container-fluid">
-                    <div class="row  justify-content-between">
-                        <div class="col-12 col-md-6">
-                            <img src="/img/hp/HP-05.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+        <h3>portfolio</h3>
+        <a href="#interier">
+            <img class="arrow" src="/img/arrow-dark.svg" alt=""/>
+        </a>
+    </header>
 
-                        <div class="col-12 col-md-4 align-self-center">
-                            <img src="/img/hp/HP-06.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+
+    <Navbar color="light" background="light" homeLink="#home"/>
+
+    <main id="header" class="home">
+        <div class="gradient"></div>
+        <section id="interier">
+            <h2 class="d-none">interiér</h2>
+
+            <div class="container-fluid">
+                <div class="row  justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="/img/hp/dom-v-novej-bani.png" alt="Rodinný dom v Novej Bani" class="img-fluid"/>
+                            <figcaption>
+                                Rodinný dom v Novej Bani<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
                     </div>
 
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-8 offset-md-4">
-                            <img src="/img/hp/HP-07.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="/img/hp/HP-08.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-4">
-                            <img src="/img/hp/HP-09.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-
-                        <div class="col-12 col-md-6 mt-20">
-                            <img src="/img/hp/HP-10.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                    <div class="col-12 col-md-4 align-self-center">
+                        <figure>
+                            <img src="/img/hp/dom-v-beluji.png" alt="Rodinný dom v Beluji" class="img-fluid"/>
+                            <figcaption>
+                                Rodinný dom v Beluji<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-            </section>
-            <section id="product">
-                <h2 class="d-none">product</h2>
-                <div class="container-fluid">
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-6">
-                            <img src="/img/hp/HP-11.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
 
-                        <div class="col-12 col-md-4 align-self-center">
-                            <a href="/art-in-park/">
-                                <img src="/img/hp/HP-12.jpeg" alt="artinpark" class="img-fluid"/>
-                                <h3>Art In Park</h3>
-                            </a>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-6 offset-md-6">
-                            <img src="/img/hp/HP-13.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-                            <img src="/img/hp/HP-14.jpeg" alt="artinpark" class="img-fluid"/>
-                            <h3>Art In Park</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-8 offset-md-4">
+                        <figure>
+                            <img src="/img/hp/karaconiho-palac.png" alt="Karáčoniho palác" class="img-fluid"/>
+                            <figcaption>
+                                Karáčoniho palác<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-            </section>
-            <section id="about">
-                <h2 class="d-none">about</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-4 text-center">
-                            <img class="img-fluid" src="/img/eva.jpg" alt="">
-                        </div>
 
-                        <div class="col-12 col-md-8">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula dapibus tempus.
-                                Mauris nec placerat nunc.
-                                </p>
-                            <p>
-                                <small>
-                                Integer ante arcu, feugiat in neque vel, consequat blandit nisl. Nam scelerisque luctus tortor, eget sodales massa lobortis ut. Mauris et purus viverra, ultrices nisi id, iaculis justo.
-                                Phasellus libero libero, sodales a congue eu, dictum ultricies risus. Donec porttitor nunc eget lectus tincidunt pulvinar.
-                                Nulla sed urna in odio placerat tincidunt nec tristique mi. Curabitur tortor mi, efficitur quis diam in, fringilla feugiat erat.
-                                </small>
-                            </p>
-
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <figure>
+                            <img src="/img/hp/umelka-01.png" alt="artinpark" class="img-fluid"/>
+                            <figcaption>
+                                Umelka 01<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-            </section>
-        </main>
-    </Layout>
+
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-4">
+                        <figure>
+                            <img src="/img/hp/umelka-02.png" alt="artinpark" class="img-fluid"/>
+                            <figcaption>
+                                Umelka 02<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-20vw">
+                        <figure>
+                            <img src="/img/hp/umelka-03.png" alt="artinpark" class="img-fluid"/>
+                            <figcaption>
+                                Umelka 03<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="/img/hp/byt-f.png" alt="Byt F." class="img-fluid"/>
+                            <figcaption>
+                                Byt F.<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-4 align-self-center">
+                        <figure>
+                            <img src="/img/hp/guthaus.png" alt="Guthaus" class="img-fluid"/>
+                            <figcaption>
+                                Guthaus<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="/img/hp/chata-k.png" alt="Chata K." class="img-fluid"/>
+                            <figcaption>
+                                Chata K.<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12">
+                        <figure>
+                            <img src="/img/hp/dom-martin.jpg" alt="RD. Martin" class="img-fluid"/>
+                            <figcaption>
+                                RD. Martin<br/>
+                                <small>interiérová štúdia</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produkt">
+            <h2 class="d-none">produkt</h2>
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-4">
+                        <figure>
+                            <img src="/img/hp/art-in-park.png" alt="RD. Martin" class="img-fluid"/>
+                            <figcaption>
+                                Art in park<br/>
+                                <small>produktový dizajn</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 mt-15vw">
+                        <figure>
+                            <img src="/img/hp/tajsa.png" alt="Tajsa" class="img-fluid"/>
+                            <figcaption>
+                                Tajsa<br/>
+                                <small>produktový dizajn</small>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a href="/identita-sk/">
+                            <figure>
+                                <img src="/img/hp/identita-sk.png" alt="identita.sk" class="img-fluid" loading="lazy"/>
+                                <figcaption>
+                                    identita.sk<br/>
+                                    <small>produktový dizajn</small>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grafika">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 offset-md-8">
+                        <a href="/umelka-grafika/">
+                            <figure>
+                                <img src="/img/hp/umelka-grafika.png" alt="Umelka - grafika" class="img-fluid"/>
+                                <figcaption>
+                                    Umelka - grafika<br/>
+                                    <small>grafický dizajn</small>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <a href="/itaps/">
+                            <figure>
+                                <img src="/img/hp/itaps.png" alt="Itaps" class="img-fluid"/>
+                                <figcaption>
+                                    Itaps<br/>
+                                    <small>grafický dizajn</small>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient"></div>
+        </section>
+        <section id="o-mne">
+            <h2 class="d-none">about</h2>
+            <div class="container">
+                <div class="header">
+                    <div>
+                        <h1>Ahoj</h1>
+                        <h4>Eva Matišáková, 22. 02. 1997, </h4>
+                    </div>
+                    <img src="/img/eva.png" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Vzdelanie</h4>
+                        <hr/>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <small>09/2012 – 05/2016</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        Stredná umelecká škola v Trenčíne<br/>
+                        interiérový dizajn
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>09/2016 – 05/2020</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        Slovenská technická univerzita v Bratislave<br/>
+                        Fakulta architektúry a dizajnu<br/>
+                        produktový dizajn
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>09/2020 - 05/2022</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        Slovenská technická univerzita v Bratislave<br/>
+                        Fakulta architektúry a dizajnu<br/>
+                        interiérový dizajn
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Súťaže / ocenenia</h4>
+                        <hr/>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <small>06/2023</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <strong>Cena dekana</strong><br/>
+                        Diplomová práca - Umelka interiér
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>06/2023</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <strong>Nominácia na cenu prof. Lacka</strong><br/>
+                        Diplomová práca - Umelka interiér
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>10/2023</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        Nominácia do finále ceny INSAID AWARDS 2022
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>05/2021</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <strong>Súťaž Úradu vlády - 1. miesto</strong><br/>
+                        Overovacia štúdia využiteľnosti objektu Karáčoniho paláca, jeho adaptácií na účely predškolského
+                        zariadenia a základej školy
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <h4>Pracovné skúsenosti</h4>
+                        <hr/>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <small>09/2020 - súčasnosť</small>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <strong>Itaps - grafička</strong>
+                        <ul>
+                            <li>vizuálna identita firmy</li>
+                            <li>návrhy rôznych tipov tlačených a online vizuálov · grafika príspevkov sociálnych sietí
+                            </li>
+                            <li>tvorba online kampaní, reklám</li>
+                            <li>interná grafika - darčkové predmety</li>
+                            <li>B2B marketing</li>
+                            <li>UI/UX dizajn webov a aplikácií</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <small>02/2022 - 03/2023</small>
+                    </div>
+
+                    <div class="col-12 col-md-8">
+                        <strong>Zeit. - junior interiérový dizajnér</strong>
+                        <ul>
+                            <li>návrh komplexných riešení súkromných a verejných interiérov</li>
+                            <li>vypracovanie realizačnej projekotvej dokumnetácie interiérov</li>
+                            <li>podrobné vypracovanie výkresovej nábytkovej dokumnetácie pre stolárov</li>
+                            <li>komunikácia s klientmi a spracovanie ich požiadaviek</li>
+                            <li>zobrazenie 3D modelov</li>
+                            <li>tvorba vizualizácií a výslednej prezentácie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
 
 
 

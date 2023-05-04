@@ -12,6 +12,7 @@
 	"dependencies": {
 		"astro": "^2.0.15",
 		"bootstrap": "^4.6.2",
-		"sass": "^1.58.3"
+		"sass": "^1.58.3",
+		"simplelightbox": "^2.12.1"
 	}
 }

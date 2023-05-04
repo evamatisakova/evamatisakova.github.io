@@ -4,15 +4,31 @@ footer {
   height: 100vh;
   position: relative;
 
+  font-size: 1.5rem;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 3rem;
+  }
   //font-family: "Gatwick Regular", sans-serif;
   //font-size: 1rem;
 
 
-  & >.container {
+  & > .container-fluid {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    & > div {
+      margin: auto;
+
+      &.row {
+        //width: 100%;
+        text-align: center;
+        margin-right: 5rem;
+        margin-left: 5rem;
+      }
+    }
 
     //& > div{
     //  margin-top: 0;
@@ -20,19 +36,49 @@ footer {
     //}
   }
 
-  h3 {
-    font-family: "Gatwick Regular", sans-serif;
-    font-size: 5vw;
+  h2 {
+    margin: auto;
+    line-height: 100%;
+
+    font-family: "Gatwick", serif;
+    font-weight: normal;
+    font-size: 8vw;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 10.5vw;
+    }
   }
 
-  p {
-    text-align: center;
-    font-size: 2rem;
+  h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
 
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  div.email {
+    @media (min-width: $breakpoint-tablet) {
+      margin-bottom: 8rem;
+    }
+
+    a {
+
+      border-bottom: 2px solid black;
+    }
+  }
+
+  svg {
+    height: 8rem;
+    @media (min-width: $breakpoint-tablet) {
+      margin-left: -2rem;
+      margin-top: -2rem;
+    }
   }
 
   .arrow {
-    height: 1.5rem;
+    height: 1.8rem;
 
     &.arrow-right {
       transform: rotate(270deg);
@@ -40,24 +86,23 @@ footer {
     }
 
     &.arrow-up {
-      height: 1.5rem;
+
       transform: rotate(180deg);
       padding-right: 3px;
+
+      display: block;
+      margin: auto;
+
+      height: 1rem;
+      margin-top: 2rem;
+      @media (min-width: $breakpoint-tablet) {
+        height: 1.5rem;
+        margin-top: 0;
+        margin-bottom: -1rem;
+      }
     }
+
   }
 
 
-  div {
-    margin: auto;
-  }
-
-
-  .watermark {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-size: 200px;
-
-    font-family: "Gatwick Regular", sans-serif;
-  }
 }

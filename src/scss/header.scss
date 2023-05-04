@@ -1,0 +1,53 @@
+header {
+  position: relative;
+  max-height: 100vh;
+  overflow-y: hidden;
+
+  .heading {
+    position: absolute;
+    width: 100%;
+    left: 2rem;
+    bottom: 0;
+  }
+
+  font-family: "Gatwick Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+
+  &.homepage {
+
+  }
+
+  img.main {
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  a{
+    position: absolute;
+    left: 20vw;
+    bottom: 0;
+    @media (min-width: $breakpoint-tablet) {
+      bottom: 2rem;
+    }
+  }
+
+  //
+  //h2 {
+  //  font-size: 3vw;
+  //  margin-top: auto;
+  //  margin-bottom: 0;
+  //}
+
+  .arrow {
+    position: absolute;
+    width: 10vw;
+    bottom: 0;
+  }
+
+}

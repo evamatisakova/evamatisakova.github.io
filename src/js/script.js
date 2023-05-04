@@ -1,6 +1,13 @@
+// import SimpleLightbox from "simplelightbox";
+//
+// let gallery = new SimpleLightbox('a.gallery');
+
+
 Array.from(document.querySelectorAll('a')).forEach((a) => {
     a.addEventListener('click', (e) => {
         const href = e.target.closest('a').href.replace(window.location.origin + window.location.pathname, '');
+
+        console.log(href);
 
         if(href === "#home"){
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -57,19 +64,34 @@ const lastScrollTop = document.body.scrollTop;
 
 const subheader = document.querySelector('header>h2');
 
+function invisibleHomepageHeaderElement(element, activeSection){
+    if(element){
+        if(activeSection !== null) {
+            element.classList.add('invisible');
+        }else{
+            element.classList.remove('invisible');
+        }
+    }
+}
+
 addEventListener("resize", (event) => {
+    const scrollTop = document.scrollingElement.scrollTop;
+
     sections = Array.from(document.querySelectorAll('main>section')).map((section) => {
         const {top, bottom} = section.getBoundingClientRect();
-        return {id: section.id, top, bottom};
+        return {id: section.id, top: top + scrollTop, bottom: bottom + scrollTop};
     })
 });
 
 addEventListener("load", (event) => {
+    const scrollTop = document.scrollingElement.scrollTop;
+
     sections = Array.from(document.querySelectorAll('main>section')).map((section) => {
         const {top, bottom} = section.getBoundingClientRect();
-        return {id: section.id, top, bottom};
+        return {id: section.id, top: top + scrollTop, bottom: bottom + scrollTop};
     })
 });
+
 
 addEventListener("scroll", (event) => {
     if (!sections || !sections.length) return;
@@ -77,12 +99,93 @@ addEventListener("scroll", (event) => {
     const scrollTop = event.target.scrollingElement.scrollTop;
 
     if (Math.abs(lastScrollTop - scrollTop) > 10) {
-        const activeSection = sections.reduce((c, a) => ((scrollTop + window.innerHeight >= a.top && scrollTop <= a.bottom) ? a : c), null);
+        const activeSection = sections.reduce((a, c) => {
+            // if((scrollTop + (window.innerHeight / 2) >= c.top && scrollTop + (window.innerHeight / 2) <= c.bottom)){
+            //     console.log(c.id, scrollTop + (window.innerHeight / 2), c.top, scrollTop + (window.innerHeight / 2), c.bottom);
+            // }
+
+            return ((scrollTop + (window.innerHeight * (3/4)) >= c.top && scrollTop + (window.innerHeight * (1/4)) <= c.bottom) ? c : a)
+        }, null);
+
+        invisibleHomepageHeaderElement(document.querySelector('header.home > h3'), activeSection);
+        invisibleHomepageHeaderElement(document.querySelector('header.home > a'), activeSection);
+
 
         if (activeSection) {
-            subheader.innerHTML = activeSection.id;
+
+            if(activeSection.id === 'o-mne') {
+                subheader.innerHTML = 'grafika';
+            }else if(activeSection.id === 'interier'){
+                subheader.innerHTML = 'interiér';
+            }else{
+                subheader.innerHTML = activeSection.id;
+            }
+
         } else {
             subheader.innerHTML = 'design'
         }
     }
 });
+
+
+
+
+/**
+ * img-flip
+ */
+
+
+Array.from(document.querySelectorAll(".img-flip")).forEach((flip) => {
+    const images = Array.from(flip.querySelectorAll('figure'));
+    let image = 0;
+    setInterval(() => {
+        image++;
+        if (image >= images.length) image = 0;
+
+        images.forEach((image) => image.classList.add('d-none'));
+        images[image].classList.remove('d-none');
+
+    }, flip.dataset.time ?? 5000);
+})
+
+const loaderSVG = document.querySelector("#loader svg g");
+const loader = document.querySelector("#loader");
+
+const hideLoader = () => {
+    if(!loader) return;
+
+    loader.classList.add('hidden');
+    setTimeout(() => {
+        loader.remove();
+    }, 1500)
+}
+
+if(loaderSVG){
+    let animationEnded = false;
+    let imagesLoaded = false;
+
+
+    window.addEventListener('load', function() {
+        console.log("images loaded");
+
+        imagesLoaded = true;
+
+        if(animationEnded){
+            hideLoader();
+        }
+    })
+
+    loaderSVG.addEventListener('animationend', () => {
+        console.log('animation ended');
+
+        animationEnded = true;
+
+        if(imagesLoaded){
+            hideLoader();
+        }
+    })
+}
+
+
+
+

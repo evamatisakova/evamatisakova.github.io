@@ -17,6 +17,7 @@ $success: #7952b3;
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
 
+
 $container-max-widths: (
         sm: 540px,
         md: 720px,
@@ -61,140 +62,18 @@ $container-max-widths: (
 // @import "bootstrap/scss/print";
 
 
+.navbar-brand {
+  padding: 0;
+
+  svg {
+    height: 3.5rem;
+  }
+}
+
 body {
-  font-family: "TWKEverett Light";
+  font-family: "SpaceGrotesk";
   font-size: 1.5rem;
-}
-
-
-header {
-  position: relative;
-  max-height: 100vh;
-  overflow-y: hidden;
-
-  .heading {
-    position: absolute;
-    width: 100%;
-    left: 2rem;
-    bottom: 0;
-  }
-
-  &.home {
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
-    //padding-bottom: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 3rem 1.5rem;
-    background: white;
-
-    h1 {
-      position: relative;
-      text-align: center;
-    }
-  }
-
-
-  font-family: "Gatwick Regular", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-
-
-  &.homepage {
-
-  }
-
-  img.main {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    width: 100%;
-    margin: 0;
-
-  }
-
-  img.arrow {
-    position: absolute;
-    left: 20vw;
-    bottom: 0;
-    @media (min-width: $breakpoint-tablet) {
-      bottom: 2rem;
-    }
-  }
-
-
-  h2 {
-    font-size: 3vw;
-    margin-top: auto;
-    margin-bottom: 0;
-  }
-
-  .arrow {
-    position: absolute;
-    width: 10vw;
-    bottom: 0;
-  }
-
-}
-
-main {
-  @media (min-width: $breakpoint-tablet) {
-    padding: 0 2rem;
-  }
-
-  img {
-    margin-bottom: 1rem;
-  }
-
-
-}
-
-main.home {
-  position: relative;
-  margin-top: 100vh;
-  padding-top: 200px;
-  padding-left: 0;
-  padding-right: 0;
-
-  & > section {
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    background: rgba(255, 255, 255, .85);
-    @media (min-width: $breakpoint-tablet) {
-      background: rgba(255, 255, 255, .7);
-    }
-  }
-
-  #gradient {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .85));
-    @media (min-width: $breakpoint-tablet) {
-      background: linear-gradient(rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .7));
-    }
-  }
-
-  .row {
-    @media (min-width: $breakpoint-tablet) {
-
-      padding-top: 300px;
-      padding-bottom: 300px;
-    }
-  }
-
-  .row:first-of-type {
-    margin-top: 0;
-  }
+  color: #000000;
 }
 
 nav {
@@ -206,12 +85,37 @@ nav {
   }
 }
 
+@import "./header.scss";
+@import "./homepage.scss";
 @import "./text.scss";
 @import "./footer.scss";
 
 
+//main {
+//  @media (min-width: $breakpoint-tablet) {
+//    padding: 0 2rem;
+//  }
+//
+//  img {
+//    margin-bottom: 1rem;
+//  }
+//
+//
+//}
+//
+//
+//
+
+
+.img-fullwidth {
+  margin-left: calc(-2rem + -15px);
+  margin-right: calc(-2rem + -15px);
+  width: calc(100% + 4rem + 30px);
+  height: auto;
+}
+
 @media (min-width: $breakpoint-tablet) {
-  @for $i from 1 through 4 {
+  @for $i from 1 through 5 {
     .mt-n#{$i * 5}vw {
       margin-top: -#{$i * 5}vw !important;
     }
@@ -222,5 +126,88 @@ nav {
   }
 }
 
-
 //@import "simplelightbox/src/simple-lightbox";
+
+#o-mne {
+  background: white;
+  padding-top: 10rem;
+
+  .header {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10rem;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    & > div {
+      margin: auto auto auto 0;
+
+      h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        font-size: 3rem;
+        @media (min-width: $breakpoint-tablet) {
+          font-size: 10.5vw;
+        }
+
+        // <br/>
+
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+      @media (min-width: $breakpoint-tablet) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .row {
+    //margin-bottom: 2rem;
+    @media (min-width: $breakpoint-tablet) {
+      padding-bottom: 3rem;
+    }
+
+
+    & > div {
+      padding-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 3rem;
+      }
+
+      font-family: "Gatwick", serif;
+      font-weight: normal;
+    }
+
+    small {
+      color: lighten(#000000, 70);
+    }
+
+    hr {
+      height: 2px;
+      background-color: #000000;
+      border: none;
+    }
+  }
+}

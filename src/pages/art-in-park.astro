@@ -1,74 +1,85 @@
 ---
 import ProjectLayout from "../layouts/ProjectLayout.astro";
+import Img from "../components/Img.astro";
+
 ---
 
-    <ProjectLayout
-        title="Art in Park | Eva.Matisakova"
-        img={{
-            src: "/projects/art-in-park/main.jpeg",
-            alt: "Art in park cover photo"
-        }}
-    >
-        <div class="container-fluid">
-            <h1 class="heading">Art in park</h1>
-            <div class="row justify-content-start mb-3 mb-md-5">
-                <div class="col-12 col-md-4"><small>svetelný objekt na festival Art in park</small></div>
-                <div class="col-12 col-md-4"><small>Trenčianske Teplice</small></div>
-                <div class="col-12 col-md-4"><small>2018</small></div>
-            </div>
+<ProjectLayout
+    navColor="dark"
+    navBackground="dark"
+    title="Art in Park | Eva.Matisakova"
+    img={{
+        src: "/img/projects/art-in-park/main.jpeg",
+        alt: "Art in park cover photo"
+    }}
+>
+    <div class="container-fluid">
+        <h1 class="heading">Art in park</h1>
+        <div class="row justify-content-start mb-3 mb-md-5">
+            <div class="col-12 col-md-6"><small>svetelný objekt na festival Art in park</small></div>
+            <div class="col-12 col-md-4"><small>Trenčianske Teplice</small></div>
+            <div class="col-12 col-md-2 text-right"><small>2018</small></div>
+        </div>
 
-            <p>
-                Na každom festivale sa nachádza miesto, ktoré ho charak- terizuje a pomáha prostredníctvom sociálnych sietí zviditeľniť festival vďaka fotografiám.
-                Je to miesto, photopoint, pri ktorom si ľudia spravia pamätnú fotografiu.
-                Môže slúžiť ako miesto na stretnutie sa, pretože je svojou veľkosťou viditeľný za denného svetla a aj v noci.
-                Pri vstupe upúta každého návštevníka.
-            </p>
+        <p>
+            Na každom festivale sa nachádza miesto, ktoré ho charak- terizuje a pomáha prostredníctvom sociálnych sietí zviditeľniť festival vďaka fotografiám.
+            Je to miesto, photopoint, pri ktorom si ľudia spravia pamätnú fotografiu.
+            Môže slúžiť ako miesto na stretnutie sa, pretože je svojou veľkosťou viditeľný za denného svetla a aj v noci.
+            Pri vstupe upúta každého návštevníka.
+        </p>
 
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="img-flip" data-time="1500">
-                        <a class="gallery" href="/projects/art-in-park/logo-light.png">
-                            <img class="img-fluid" src="/projects/art-in-park/logo-light.png" alt="">
-                        </a>
-                        <a class="gallery" href="/projects/art-in-park/logo-dark.png">
-                            <img class="img-fluid d-none" src="/projects/art-in-park/logo-dark.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <a class="gallery" href="/projects/art-in-park/photo1.jpeg">
-                        <img class="img-fluid" src="/projects/art-in-park/photo1.jpeg" alt="">
-                    </a>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <a class="gallery" href="/projects/art-in-park/photo2.jpeg">
-                        <img class="img-fluid mt-n10vw" src="/projects/art-in-park/photo2.jpeg" alt="">
-                    </a>
-
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="img-flip" data-time="1500">
+                    <Img
+                        url="/img/projects/art-in-park/logo-light.png"
+                        alt="Logo svetlé"
+                    />
+                    <Img
+                        url="/img/projects/art-in-park/logo-dark.png"
+                        alt="Logo tmavé"
+                    />
                 </div>
             </div>
-            <p>
-                Nápis je vytvorený z plôch, ktoré sú jemne povysúvané a tak vytvárajú reliéf. Stena pôsobí abstraktne,
-                pri
-                pohľade
-                z každého uhla vyzerá inak. Takisto pri dopade svetla, vyt- vára rôzne tiene. Konštrukcia je zhotovená z
-                drevotriesky, povrchovo upravená exteriérovou farbou. Svetlo je vyt- vorené pomocou bodových svietidiel,
-                ktoré
-                majú dobrý rozptyl svetla.
-            </p>
+            <div class="col-12 col-md-6 offset-md-2">
+                <Img
+                    url="/img/projects/art-in-park/photo1.jpeg"
+                    alt="Logo v noci"
+                    caption=""
+                />
+            </div>
 
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <a class="gallery" href="/projects/art-in-park/indentity.jpeg">
-                        <img class="img-fluid mt-20vw" src="/projects/art-in-park/indentity.jpeg"/>
-                    </a>
-                </div>
-                <div class="col-12 col-md-5 offset-md-1">
-                    <a class="gallery" href="/projects/art-in-park/photo3.jpeg">
-                        <img class="img-fluid" src="/projects/art-in-park/photo3.jpeg"/>
-                    </a>
-                </div>
+            <div class="col-12 col-md-6 mt-n20vw">
+                <Img
+                    url="/img/projects/art-in-park/photo2.jpeg"
+                    alt="Logo počas festivalu"
+                    caption=""
+                />
             </div>
         </div>
-    </ProjectLayout>
+        <p>
+            Nápis je vytvorený z plôch, ktoré sú jemne povysúvané a tak vytvárajú reliéf. Stena pôsobí abstraktne,
+            pri pohľade z každého uhla vyzerá inak. Takisto pri dopade svetla, vytvára rôzne tiene. Konštrukcia je zhotovená z
+            drevotriesky, povrchovo upravená exteriérovou farbou. Svetlo je vyt- vorené pomocou bodových svietidiel,
+            ktoré
+            majú dobrý rozptyl svetla.
+        </p>
+
+        <div class="row">
+            <div class="col-12 col-md-6  mt-20vw">
+                <Img
+                    url="/img/projects/art-in-park/indentity.jpeg"
+                    alt="Logo počas festivalu"
+                    caption=""
+                />
+            </div>
+            <div class="col-12 col-md-5 offset-md-1">
+                <Img
+                    url="/img/projects/art-in-park/photo3.jpeg"
+                    alt="Logo počas festivalu"
+                    caption=""
+                />
+            </div>
+        </div>
+    </div>
+</ProjectLayout>
