@@ -3,23 +3,23 @@ import Layout from './Layout.astro';
 import Navbar from '../components/Navbar.astro';
 
 const {title, img, navColor, navBackground} = Astro.props
-
 ---
 
-    <Layout
-        {...{title}}
-    >
-        <header id="header">
-            <img class="main" src={img.src} alt={img.alt}/>
-            <a href="#main">
-                <img class="arrow" src="/img/arrow-light.svg" alt=""/>
-            </a>
-        </header>
+<Layout
+    {...{title}}
+>
+    <header class="project" id="header">
+        <img class="main" src={img.src} alt={img.alt}/>
 
-        <Navbar color={navColor} background={navBackground} homeLink="/"/>
+        <a href="#main">
+            <img class="arrow" src="/img/arrow-light.svg" alt=""/>
+        </a>
+    </header>
 
-        <main id="main">
-            <slot/>
-        </main>
-    </Layout>
+    <Navbar color={navColor} background={navBackground} homeLink="/"/>
+
+    <main class="project" id="main">
+        <slot/>
+    </main>
+</Layout>
 

@@ -28,30 +28,48 @@ header {
 
   }
 
-  & > div{
-    position:relative;
-  }
-
-  a {
-    position: absolute;
-    left: 15vw;
-    @media (min-width: $breakpoint-tablet) {
-      left: 20vw;
+  &.home{
+    & > div{
+      position:relative;
     }
 
-    bottom: -1.8rem;
-    @media (min-width: $breakpoint-tablet) {
-      bottom: -12vw;
-    }
-
-    .arrow {
-      height: 1.5rem;
+    a {
+      position: absolute;
+      left: 15vw;
       @media (min-width: $breakpoint-tablet) {
-        height: 12vw;
+        left: 20vw;
       }
-    }
 
+      bottom: -1.8rem;
+      @media (min-width: $breakpoint-tablet) {
+        bottom: -12vw;
+      }
+
+      .arrow {
+        height: 1.5rem;
+        @media (min-width: $breakpoint-tablet) {
+          height: 12vw;
+        }
+      }
+
+    }
   }
+
+  &.project {
+    a {
+      position: absolute;
+      height: 12vw;
+      width: 12vw;
+      bottom: 2vw;
+      left: 15vw;
+      @media (min-width: $breakpoint-tablet) {
+        left: 20vw;
+      }
+
+    }
+  }
+
+
 
   //
   //h2 {

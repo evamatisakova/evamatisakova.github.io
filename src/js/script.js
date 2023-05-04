@@ -33,7 +33,7 @@ const triggerNavbarBackground = (scrollTop, header, navbar) => {
 
     if(!optionalBackground) return;
 
-    if (scrollTop >= height - 68) {
+    if (scrollTop >= height - 90) {
         navbar.classList.add('bg-' + optionalBackground);
     } else {
         navbar.classList.remove('bg-' + optionalBackground);

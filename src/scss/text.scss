@@ -9,8 +9,8 @@ a {
 }
 
 h1 {
-  margin-bottom: 2rem;
-  text-align: center;
+
+
 
   line-height: 100%;
 
@@ -19,17 +19,12 @@ h1 {
   font-size: 8vw;
 
   @media (min-width: $breakpoint-tablet) {
-    margin-top: 5rem;
     margin-bottom: 0;
-    font-size: 10.5vw;
   }
 }
 
 h2 {
-  text-align: center;
   line-height: 100%;
-  margin-bottom: 2rem;
-
 
   font-family: "NewYork", serif;
   font-weight: normal;
