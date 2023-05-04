@@ -42,13 +42,13 @@ header {
 
       bottom: -1.8rem;
       @media (min-width: $breakpoint-tablet) {
-        bottom: -12vw;
+        bottom: -9vw;
       }
 
       .arrow {
         height: 1.5rem;
         @media (min-width: $breakpoint-tablet) {
-          height: 12vw;
+          height: 10vw;
         }
       }
 
