@@ -248,5 +248,17 @@ nav {
 
 main.project{
   margin-top: -4.5rem;
-  padding-top: 5.5rem;
+  padding-top: 7rem;
+
+  h1 {
+    font-size: 3rem;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 8vw;
+    }
+    margin-bottom: 4rem;
+  }
+
+  p{
+    margin-top: 5rem;
+  }
 }
