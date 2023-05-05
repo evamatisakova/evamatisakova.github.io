@@ -13,7 +13,7 @@ $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
 
-$light:  #fff;
+$light: #fff;
 
 
 @import "bootstrap/scss/functions"; // Required
@@ -111,9 +111,14 @@ nav {
 
 
 .img-fullwidth {
-  margin-left: calc(-2rem + -15px);
-  margin-right: calc(-2rem + -15px);
-  width: calc(100% + 4rem + 30px);
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: calc(100% + 4rem + 30px);
+
+    margin-left: calc(-2rem + -15px);
+    margin-right: calc(-2rem + -15px);
+  }
   height: auto;
 }
 
@@ -184,9 +189,10 @@ nav {
     }
   }
 
-  ul{
-    padding-left:0
+  ul {
+    padding-left: 0
   }
+
   li {
     //list-style: none;
     //list-style-image: ;
@@ -246,7 +252,7 @@ nav {
   }
 }
 
-main.project{
+main.project {
   margin-top: -4.5rem;
   padding-top: 7rem;
 
@@ -254,11 +260,15 @@ main.project{
     font-size: 3rem;
     @media (min-width: $breakpoint-tablet) {
       font-size: 8vw;
+      margin-bottom: 4rem;
     }
-    margin-bottom: 4rem;
+
   }
 
-  p{
-    margin-top: 5rem;
+  p {
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: 5rem;
+    }
+
   }
 }
