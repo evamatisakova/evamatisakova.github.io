@@ -1,0 +1,98 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+---
+
+<ProjectLayout
+        navColor="light"
+        navBackground="light"
+        title="Nova Bana | Eva.Matisakova"
+        img={{
+            src: "/img/projects/nova-bana/main.jpg",
+            alt: "Nova Bana cover photo"
+        }}
+>
+    <div class="container-fluid">
+
+
+        <h1 class="heading">nova-bana</h1>
+        <div class="row justify-content-start mb-3 mb-md-5">
+            <div class="col-12 col-md-5"><small>interiér rodinného domu</small></div>
+            <div class="col-12 col-md-3"><small>Eva Matišáková</small></div>
+            <div class="col-12 col-md-2"><small>Nová Baňa</small></div>
+            <div class="col-12 col-md-2 text-md-right"><small>2019</small></div>
+        </div>
+
+        <p>Filozofia návrhu spočíva v zachovaní požiadaviek majiteľov a zadefinovanou dispozíciou architektky. Návrh sa snaží ukázať aj iné možnosti zariadenia a rozloženia priestoru. Interiér má byť funkčný a pôsobiť sofistikovane, elegantne. Otvorená dispozícia a veľké priestranné okná vytvárajú presvetlený interiér s množstvom variant usporiadania a návrhov. Hlavnou výzvou bolo docieliť zjednotenie tak veľkého otvoreného priestoru, aby boli zároveň miestnosti oddelené, ale pôsobili jednotne.</p>
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-6">
+                <Img
+                        url="/img/projects/nova-bana/render.jpg"
+                        alt=""
+                        caption=""
+                />
+            </div>
+        </div>
+
+        <Img
+                url="/img/projects/nova-bana/podorys.jpg"
+                alt=""
+                caption=""
+        />
+
+        <div class="row">
+            <div class="col-12 col-md-9 offset-md-3">
+                <Img
+                        url="/img/projects/nova-bana/kuchyna.jpg"
+                        alt="Kuchyna"
+                        caption=""
+                />
+            </div>
+        </div>
+
+        <ImgFullWidth
+                url="/img/projects/nova-bana/obyvacka.jpg"
+                alt=""
+                caption=""
+        />
+
+        <p>Priestranný interiér si môže dovoliť aj tmavšiu kombináciu farieb. Pri dostatočne veľkom osvetlení, ako je v tomto prípade, interiér stále pôsobí svetlo a nezmenšuje priestor. Ide najmä o harmóniu materiálov a farieb, aby boli dostatočne vyvážené. V interiéri prevažuje dubové drevo, ktoré je doplnené tmavo sivou, olivovou, bielou a oranžovou farbou. Oranžová tvorí akcent medzi zemitými farbami. Je použitá najmä na doplnkoch a textíliách.</p>
+
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <Img
+                        url="/img/projects/nova-bana/render1.jpg"
+                        alt=""
+                        caption=""
+                />
+            </div>
+            <div class="col-12 col-md-8 offset-md-4 ">
+                <Img
+                        url="/img/projects/nova-bana/render2.jpg"
+                        alt=""
+                        caption=""
+                />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <Img
+                        url="/img/projects/nova-bana/spalna.jpg"
+                        alt="Spalna"
+                        caption=""
+                />
+            </div>
+            <div class="col-12 col-md-7 offset-md-1 mt-25vw">
+                <Img
+                        url="/img/projects/nova-bana/detska-izba.jpg"
+                        alt="Detska izba"
+                        caption=""
+                />
+            </div>
+        </div>
+    </div>
+</ProjectLayout>

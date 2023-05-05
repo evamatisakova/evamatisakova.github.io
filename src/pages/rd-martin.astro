@@ -1,0 +1,101 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+---
+
+<ProjectLayout
+        navColor="light"
+        navBackground="light"
+        title="Identita SK | Eva.Matisakova"
+        img={{
+            src: "/img/projects/rd-martin/main.jpg",
+            alt: "Umelka Grafika cover photo"
+        }}
+>
+    <div class="container-fluid">
+
+
+        <h1 class="heading">Umelka - dostavba</h1>
+        <div class="row justify-content-start mb-3 mb-md-5">
+            <div class="col-12 col-md-5"><small>Rekonštrukcia rodinného domu</small></div>
+            <div class="col-12 col-md-3"><small>Eva Matišáková, Zeit. architects</small></div>
+            <div class="col-12 col-md-2"><small>Martin</small></div>
+            <div class="col-12 col-md-2 text-md-right"><small>2023</small></div>
+        </div>
+
+        <p>Nové funkcie rekonštruovaného areálu by mali oveľa viac zod- povedať požiadavkám súčasnej doby a prilákať
+            návštevníkov. Umenie je stále hlavná a najdôležitejšia funkcia areálu, ale je nutné ju podporiť ďalšími
+            prevádzkami. Nová dostavba je dvo- jpodlažná budova, kde sa na prízemí nachádzajú priestory ka- viarne,
+            hygienické a skladové zázemie a na prvom poschodí je situovaný Art shop a apartmán dostupné z areálu a aj zo
+            strany starého mosta. Tieto funkcie dotvárajú celkovú kon- cepciu a myšlienku tým, že prispievajú k
+            rentabilite Umeleckej besedy.</p>
+
+        <div class="mt-n10vw" style="z-index:-1; position: relative">
+            <Img
+                    url="/img/projects/rd-martin/funkcie.png"
+                    alt=""
+                    caption=""
+            />
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-1 order-md-2">
+                <Img
+                        url="/img/projects/rd-martin/podorys.png"
+                        alt="Pôdorys domu"
+                        caption="Pôdorys domu"
+                />
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 order-md-1 mt-25vw">
+                <Img
+                        url="/img/projects/rd-martin/exterier.jpg"
+                        alt="Exteriér"
+                        caption="Exteriér"
+                />
+
+            </div>
+        </div>
+
+        <ImgFullWidth
+                url="/img/projects/rd-martin/obyvacka1.jpg"
+                alt=""
+                caption=""
+        />
+
+
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-4">
+                <Img
+                        url="/img/projects/rd-martin/obyvacka2.jpg"
+                        alt="Obývacia izba"
+                        caption="Obývacia izba"
+                />
+            </div>
+            <div class="col-12 col-md-7">
+                <Img
+                        url="/img/projects/rd-martin/jedalen.jpg"
+                        alt="Jedáleň"
+                        caption="Jedáleň"
+                />
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 mt-20vw">
+                <Img
+                        url="/img/projects/rd-martin/kuchyna.jpg"
+                        alt="Kuchyňa"
+                        caption="Kuchyňa"
+                />
+            </div>
+            <div class="col-12 col-md-8">
+                <Img
+                        url="/img/projects/rd-martin/spalna.jpg"
+                        alt="Spálňa"
+                        caption="Spálňa"
+                />
+            </div>
+        </div>
+
+
+    </div>
+</ProjectLayout>

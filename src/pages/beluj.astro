@@ -1,0 +1,74 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+---
+
+<ProjectLayout
+        navColor="light"
+        navBackground="light"
+        title="Beluj | Eva.Matisakova"
+        img={{
+            src: "/img/projects/beluj/main.jpg",
+            alt: "Beluj cover photo"
+        }}
+>
+    <div class="container-fluid">
+
+
+        <h1 class="heading">Beluj</h1>
+        <div class="row justify-content-start mb-3 mb-md-5">
+            <div class="col-12 col-md-5"><small>interiér rodinného domu</small></div>
+            <div class="col-12 col-md-3"><small>Eva Matišáková</small></div>
+            <div class="col-12 col-md-2"><small>Beluj</small></div>
+            <div class="col-12 col-md-2 text-md-right"><small>2019</small></div>
+        </div>
+
+        <p>Tradičný vidiecky dom v radovej zástavbe, pri ktorom bol hlavný cieľ zachovať jeho pôvodný charakter, ale zmodernizovať ho tak, aby vyhovoval súčasným podmienkam na bývanie. V ľudovej architektúre sú zakódované a vekom overené princípy. Je charakteristická svojím prispôsobením sa prostrediu, nikdy nebojovala s prírodou, ale stala sa jej súčasťou. Dôležité bolo najmä vystihnúť atmosféru domu a implementovať ju do celého priestoru a zariadenia domu.</p>
+
+
+        <Img
+                url="/img/projects/beluj/podorys.jpg"
+                alt=""
+                caption=""
+        />
+
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-2">
+                <Img
+                        url="/img/projects/beluj/kuchyna.jpg"
+                        alt="Kuchyna"
+                        caption=""
+                />
+            </div>
+        </div>
+
+        <p>Dispozícia domu bola zachovaná z technického aj eko- nomického hľadiska, ale aj z dôvodu zachovania tradičného členenia priestoru. Riešený priestor pozostá- va z 3 izieb, kuchyne, 2 kúpeľní a vstupov. Miestnosti sú radené za sebou ako v tradičnom vidieckom dome, kde prvá miestnosť v dome väčšinou predstavovala hlavnú obývaciu izbu.</p>
+
+        <ImgFullWidth
+                url="/img/projects/beluj/kuchyna3.jpg"
+                alt=""
+                caption=""
+        />
+
+        <p>Dispozícia domu bola zachovaná z technického aj eko- nomického hľadiska, ale aj z dôvodu zachovania tradičného členenia priestoru. Riešený priestor pozostá- va z 3 izieb, kuchyne, 2 kúpeľní a vstupov.</p>
+
+        <div class="row">
+            <div class="col-12 col-md-4 mt-15vw">
+                <Img
+                        url="/img/projects/beluj/chodba.jpg"
+                        alt="Chodba"
+                        caption=""
+                />
+            </div>
+            <div class="col-12 col-md-4 offset-md-4">
+                <Img
+                        url="/img/projects/beluj/kuchyna2.jpg"
+                        alt="Kuchyna"
+                        caption=""
+                />
+            </div>
+        </div>
+    </div>
+</ProjectLayout>
