@@ -26,12 +26,17 @@ header.home {
   }
 
   h1, h2{
+    display: block;
     text-align: center;
     margin-bottom: 2rem;
 
   }
 
   h3, a {
+    @media (max-width: $breakpoint-tablet) {
+      text-align: center;
+      display: block;
+    }
     opacity: 1;
     transition: all 1s;
 

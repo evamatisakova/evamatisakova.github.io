@@ -19,14 +19,21 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
+    &:first-child > div:first-child{
+      margin-bottom: 2.5rem;
+    }
+
     & > div {
       margin: auto;
 
       &.row {
         //width: 100%;
-        text-align: center;
-        margin-right: 5rem;
-        margin-left: 5rem;
+
+        @media (max-width: $breakpoint-tablet) {
+          text-align: center;
+        }
+        margin-right: 2rem;
+        margin-left: 2rem;
       }
     }
 
@@ -38,6 +45,7 @@ footer {
 
   h2 {
     margin: auto;
+    margin-bottom: 5px;
     line-height: 100%;
 
     font-family: "Gatwick", serif;
@@ -45,7 +53,7 @@ footer {
     font-size: 8vw;
 
     @media (min-width: $breakpoint-tablet) {
-      font-size: 10.5vw;
+      font-size: 10vw;
     }
   }
 
@@ -72,7 +80,7 @@ footer {
   svg {
     height: 8rem;
     @media (min-width: $breakpoint-tablet) {
-      margin-left: -2rem;
+      margin-left: -1.5rem;
       margin-top: -2rem;
     }
   }
@@ -104,5 +112,18 @@ footer {
 
   }
 
+  .bottom{
+    text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      width:100%;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      //justify-items: center;
+    }
+
+  }
 
 }

@@ -31,12 +31,14 @@ header {
   &.home{
     & > div{
       position:relative;
+      width: 100%;
     }
 
     a {
-      position: absolute;
-      left: 15vw;
+      margin: auto;
+      margin-top: 20vw;
       @media (min-width: $breakpoint-tablet) {
+        position: absolute;
         left: 20vw;
       }
 
@@ -46,7 +48,11 @@ header {
       }
 
       .arrow {
-        height: 1.5rem;
+        height: 4rem;
+
+        @media (min-width: $breakpoint-tablet) {
+          margin-bottom: 0
+        }
         @media (min-width: $breakpoint-tablet) {
           height: 10vw;
         }

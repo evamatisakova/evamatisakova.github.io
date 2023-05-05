@@ -13,6 +13,9 @@ $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
 
+$light:  #fff;
+
+
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
@@ -135,9 +138,11 @@ nav {
   .header {
     width: 100%;
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
 
     @media (min-width: $breakpoint-tablet) {
+      margin-bottom: 10rem;
+
       height: 70vh;
       display: flex;
       flex-direction: column;
@@ -177,6 +182,35 @@ nav {
         height: 100%;
       }
     }
+  }
+
+  ul{
+    padding-left:0
+  }
+  li {
+    //list-style: none;
+    //list-style-image: ;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 3rem;
+  }
+
+  /* Set the list image as background image*/
+  li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: -0.7rem;
+    margin-left: -3rem;
+
+    /* Height of the list image*/
+    height: 2rem;
+
+    /* Width of the list image*/
+    width: 2rem;
+    background-image: url('/bullet-point.png');
   }
 
   .row {
