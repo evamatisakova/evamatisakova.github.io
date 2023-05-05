@@ -65,7 +65,7 @@ const lastScrollTop = document.body.scrollTop;
 const subheader = document.querySelector('header>h2');
 
 function invisibleHomepageHeaderElement(element, activeSection){
-    console.log({activeSection});
+    console.log("invisibleHomepageHeaderElement", {activeSection}, element);
     if(element){
         if(activeSection !== null) {
             element.classList.add('invisible');
@@ -108,8 +108,8 @@ addEventListener("scroll", (event) => {
             return ((scrollTop + (window.innerHeight * (3/4)) >= c.top && scrollTop + (window.innerHeight * (1/4)) <= c.bottom) ? c : a)
         }, null);
 
-        invisibleHomepageHeaderElement(document.querySelector('header.home > h3'), activeSection);
-        invisibleHomepageHeaderElement(document.querySelector('header.home > a'), activeSection);
+        invisibleHomepageHeaderElement(document.querySelector('header.home h3'), activeSection);
+        invisibleHomepageHeaderElement(document.querySelector('header.home a'), activeSection);
 
 
         if (activeSection) {
