@@ -119,7 +119,12 @@ nav {
     margin-left: calc(-2rem + -15px);
     margin-right: calc(-2rem + -15px);
   }
-  height: auto;
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -259,7 +264,7 @@ main.project {
   h1 {
     font-size: 3rem;
     @media (min-width: $breakpoint-tablet) {
-      font-size: 8vw;
+      font-size: 5vw;
       margin-bottom: 4rem;
     }
 

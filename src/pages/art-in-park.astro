@@ -6,7 +6,7 @@ import Img from "../components/Img.astro";
 
 <ProjectLayout
     navColor="dark"
-    navBackground="dark"
+    navBackground="light"
     title="Art in Park | Eva.Matisakova"
     img={{
         src: "/img/projects/art-in-park/main.jpeg",
@@ -16,9 +16,10 @@ import Img from "../components/Img.astro";
     <div class="container-fluid">
         <h1 class="heading">Art in park</h1>
         <div class="row justify-content-start mb-3 mb-md-5">
-            <div class="col-12 col-md-6"><small>svetelný objekt na festival Art in park</small></div>
-            <div class="col-12 col-md-4"><small>Trenčianske Teplice</small></div>
-            <div class="col-12 col-md-2 text-right"><small>2018</small></div>
+            <div class="col-12 col-md-5"><small>svetelný objekt na festival Art in park</small></div>
+            <div class="col-12 col-md-3"><small>Eva Matišáková</small></div>
+            <div class="col-12 col-md-3"><small>Trenčianske Teplice</small></div>
+            <div class="col-12 col-md-1 text-md-right"><small>2018</small></div>
         </div>
 
         <p>
@@ -31,19 +32,20 @@ import Img from "../components/Img.astro";
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="img-flip" data-time="1500">
-                    <Img
-                        url="/img/projects/art-in-park/logo-light.png"
-                        alt="Logo svetlé"
-                    />
-                    <Img
-                        url="/img/projects/art-in-park/logo-dark.png"
-                        alt="Logo tmavé"
-                    />
+                    <figure>
+                        <img class="img-fluid" src="/img/projects/art-in-park/logo-light.png" alt="Logo svetlé"/>
+
+                    </figure>
+
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/art-in-park/logo-dark.png" alt="Logo tmavé"/>
+
+                    </figure>
                 </div>
             </div>
             <div class="col-12 col-md-6 offset-md-2">
                 <Img
-                    url="/img/projects/art-in-park/photo1.jpeg"
+                    url="/img/projects/art-in-park/photo1.jpg"
                     alt="Logo v noci"
                     caption=""
                 />
@@ -51,7 +53,7 @@ import Img from "../components/Img.astro";
 
             <div class="col-12 col-md-6 mt-n20vw">
                 <Img
-                    url="/img/projects/art-in-park/photo2.jpeg"
+                    url="/img/projects/art-in-park/photo2.png"
                     alt="Logo počas festivalu"
                     caption=""
                 />
@@ -60,22 +62,21 @@ import Img from "../components/Img.astro";
         <p>
             Nápis je vytvorený z plôch, ktoré sú jemne povysúvané a tak vytvárajú reliéf. Stena pôsobí abstraktne,
             pri pohľade z každého uhla vyzerá inak. Takisto pri dopade svetla, vytvára rôzne tiene. Konštrukcia je zhotovená z
-            drevotriesky, povrchovo upravená exteriérovou farbou. Svetlo je vyt- vorené pomocou bodových svietidiel,
-            ktoré
-            majú dobrý rozptyl svetla.
+            drevotriesky, povrchovo upravená exteriérovou farbou. Svetlo je vytvorené pomocou bodových svietidiel,
+            ktoré majú dobrý rozptyl svetla.
         </p>
 
         <div class="row">
             <div class="col-12 col-md-6  mt-20vw">
                 <Img
-                    url="/img/projects/art-in-park/indentity.jpeg"
+                    url="/img/projects/art-in-park/identity.jpg"
                     alt="Logo počas festivalu"
                     caption=""
                 />
             </div>
             <div class="col-12 col-md-5 offset-md-1">
                 <Img
-                    url="/img/projects/art-in-park/photo3.jpeg"
+                    url="/img/projects/art-in-park/photo3.jpg"
                     alt="Logo počas festivalu"
                     caption=""
                 />

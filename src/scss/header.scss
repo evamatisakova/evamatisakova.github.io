@@ -32,6 +32,7 @@ header {
     & > div{
       position:relative;
       width: 100%;
+      padding-bottom: 8vw;
     }
 
     a {
@@ -44,7 +45,7 @@ header {
 
       bottom: -1.8rem;
       @media (min-width: $breakpoint-tablet) {
-        bottom: -9vw;
+        bottom: 0;
       }
 
       .arrow {
@@ -54,7 +55,7 @@ header {
           margin-bottom: 0
         }
         @media (min-width: $breakpoint-tablet) {
-          height: 10vw;
+          height: 8vw;
         }
       }
 

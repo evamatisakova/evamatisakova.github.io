@@ -1,10 +1,9 @@
-
 ---
 import ProjectLayout from "../layouts/ProjectLayout.astro";
 import Img from "../components/Img.astro";
 ---
 
-    <ProjectLayout
+<ProjectLayout
         navColor="light"
         navBackground="light"
         title="Identita SK | Eva.Matisakova"
@@ -12,84 +11,101 @@ import Img from "../components/Img.astro";
             src: "/img/projects/identita-sk/main.png",
             alt: "Identita SK cover photo"
         }}
-    >
-        <div class="container-fluid">
-            <h1 class="heading">identita.sk</h1>
-            <div class="row justify-content-start mb-3 mb-md-5">
-                <div class="col-12 col-md-4"><small>Policový systém</small></div>
-                <div class="col-12 col-md-6"><small>Eva Matišáková, Ústav Dizajnu FAD STU</small></div>
-                <div class="col-12 col-md-2 text-right"><small>2021</small></div>
-            </div>
+>
+    <div class="container-fluid">
+        <h1 class="heading">identita.sk</h1>
+        <div class="row justify-content-start mb-3 mb-md-5">
+            <div class="col-12 col-md-4"><small>Policový systém</small></div>
+            <div class="col-12 col-md-6"><small>Eva Matišáková, Ústav Dizajnu FAD STU</small></div>
+            <div class="col-12 col-md-2 text-right"><small>2021</small></div>
+        </div>
 
-            <p>Policový systém je inšpirovaný tradičnými kuchyňami. Otvorené police, na ktorých bol poukladaný riad a
-                iné pomôcky do domácnosti. Nastal trend, keď ľudia začali všetko skrývať do vysokých uzavretých políc,
-                aby vyzeralo všetko čisté a upratané. V posledných rokoch sa tento zvyk vytráca a pracuje sa s
-                kombináciu otvorených vzdušných systémov a uzavretých skriniek.</p>
+        <p>Policový systém je inšpirovaný tradičnými kuchyňami. Otvorené police, na ktorých bol poukladaný riad a
+            iné pomôcky do domácnosti. Nastal trend, keď ľudia začali všetko skrývať do vysokých uzavretých políc,
+            aby vyzeralo všetko čisté a upratané. V posledných rokoch sa tento zvyk vytráca a pracuje sa s
+            kombináciu otvorených vzdušných systémov a uzavretých skriniek.</p>
 
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="img-flip" data-time="400">
-                        <img class="img-fluid" src="/img/projects/identita-sk/stack-1.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/stack-2.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/stack-3.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/stack-4.png" alt=""/>
-                    </div>
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+                <div class="img-flip" data-time="400">
+                    <figure>
+                        <img class="img-fluid" src="/img/projects/identita-sk/1.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/2.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/3.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/4.png" alt=""/>
+                    </figure>
                 </div>
-                <div class="col-12 col-md-8">
-                    <Img
+            </div>
+            <div class="col-12 col-md-8">
+                <Img
                         url="/img/projects/identita-sk/render1.png"
                         alt="Render"
-                    />
-                </div>
-                <div class="col col-md-12">
-                    <div class="img-flip" data-time="500">
-                        <img class="img-fluid" src="/img/projects/identita-sk/setup-1.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/setup-2.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/setup-3.png" alt=""/>
-                        <img class="img-fluid d-none" src="/img/projects/identita-sk/setup-4.png" alt=""/>
-                    </div>
+                />
+            </div>
+            <div class="col col-md-12">
+                <div class="img-flip" data-time="500">
+                    <figure>
+                        <img class="img-fluid" src="/img/projects/identita-sk/f1.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/f2.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/f3.png" alt=""/>
+                    </figure>
+                    <figure class="d-none">
+                        <img class="img-fluid" src="/img/projects/identita-sk/f4.png" alt=""/>
+                    </figure>
                 </div>
             </div>
+        </div>
 
-            <div class="row justify-content-end">
-                <div class="col-12 col-md-2 text-center">
-                    <Img
+        <div class="row justify-content-md-end">
+            <div class="col-6 offset-3 col-md-2 offset-md-0 text-center">
+                <Img
                         url="/img/projects/identita-sk/detail1.png"
                         alt="Detail dvoch spojených modulov"
                         caption="Detail dvoch spojených modulov"
-                    />
-                </div>
-                <div class="col-12 col-md-2 text-center">
-                    <Img
+                />
+            </div>
+            <div class="col-6 offset-3 col-md-2 offset-md-0 text-center">
+                <Img
                         url="/img/projects/identita-sk/detail2.png"
                         alt="Detail spojenia nohy"
                         caption="Detail spojenia nohy"
-                    />
-                </div>
-                <div class="col-12 col-md-2 text-center">
-                    <Img
+                />
+            </div>
+            <div class="col-6 offset-3 col-md-2 offset-md-0 text-center">
+                <Img
                         url="/img/projects/identita-sk/detail3.png"
                         alt="Detail spojenia na cudzie pero"
                         caption="Detail spojenia na cudzie pero"
-                    />
-                </div>
+                />
             </div>
+        </div>
 
-            <p class="mt-10vw">Systém sa dá nakombinovať do rôznych výškových zostáv. Je zhotovený v štyroch výškových rozmeroch -
-                najnižší modul sa dá využívať ako odkladací stolík a ostané ako všestranné police. Balenie obsahuje
-                nohy, police a cudzie pero priebežné, prostredníctvom ktorého sa spájajú jednotliné časti. Jaseňové
-                drevo je povrchovo upravené olejom, pričom sú nohy odlíšené iným odtieňom, kvôli zaujímavejšiemu
-                detailu v spoji.</p>
+        <p class="mt-10vw">Systém sa dá nakombinovať do rôznych výškových zostáv. Je zhotovený v štyroch výškových
+            rozmeroch -
+            najnižší modul sa dá využívať ako odkladací stolík a ostané ako všestranné police. Balenie obsahuje
+            nohy, police a cudzie pero priebežné, prostredníctvom ktorého sa spájajú jednotliné časti. Jaseňové
+            drevo je povrchovo upravené olejom, pričom sú nohy odlíšené iným odtieňom, kvôli zaujímavejšiemu
+            detailu v spoji.</p>
 
-            <div class="row">
-                <div class="col col-md-6">
-                    <Img
+        <div class="row">
+            <div class="col col-md-6">
+                <Img
                         url="/img/projects/identita-sk/render2.png"
                         alt="Render"
-                    />
-                </div>
+                />
             </div>
-
-
         </div>
-    </ProjectLayout>
+
+
+    </div>
+</ProjectLayout>
