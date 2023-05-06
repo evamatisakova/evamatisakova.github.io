@@ -276,3 +276,30 @@ main.project {
 
   }
 }
+
+.collapsing {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+}
+
+.collapse.navbar-collapse.show{
+  background: white;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: calc(100% + 2rem);
+
+  //z-index: -5;
+  margin-top: -4rem;
+  padding-top: 4rem;
+  height: 100vh;
+  .nav-link{
+    color: black;
+    //z-index:10;
+  }
+
+}

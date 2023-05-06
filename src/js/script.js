@@ -2,12 +2,15 @@
 //
 // let gallery = new SimpleLightbox('a.gallery');
 
+const navbarCollapse = document.querySelector('.collapse.navbar-collapse');
 
 Array.from(document.querySelectorAll('a')).forEach((a) => {
     a.addEventListener('click', (e) => {
         const href = e.target.closest('a').href.replace(window.location.origin + window.location.pathname, '');
 
-        console.log(href);
+        if(navbarCollapse && navbarCollapse.classList.contains('show')){
+            navbarCollapse.classList.remove('show');
+        }
 
         if(href === "#home"){
             window.scrollTo({ top: 0, behavior: 'smooth' });
