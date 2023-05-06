@@ -1,0 +1,74 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+import Img from "../components/Img.astro";
+import ImgFullWidth from "../components/ImgFullWidth.astro";
+
+
+---
+
+    <ProjectLayout
+        navColor="light"
+        navBackground="light"
+        title="Byt. F | Eva.Matisakova"
+        img={{
+            src: "/img/projects/chata-k/main.jpg",
+            alt: "Byt. F cover photo"
+        }}
+    >
+        <div class="container-fluid">
+            <h1 class="heading">Chata K.</h1>
+            <div class="row justify-content-start mb-3 mb-md-5">
+                <div class="col-12 col-md-4"><small>Rekonštrukcia chaty</small></div>
+                <div class="col-12 col-md-4"><small>Eva Matišáková, Zeit. architects</small></div>
+                <div class="col-12 col-md-2 text-right"><small>Zemplínska Šírava</small></div>
+                <div class="col-12 col-md-2 text-right"><small>2022</small></div>
+            </div>
+
+
+            
+            <div class="row">
+                <div class="col-12 col-md-4 align-self-center">
+                    <Img
+                        url="/img/projects/chata-k/kuchyna.jpg"
+                        alt="Kuchyňa s jedálňou"
+                        caption="Kuchyňa s jedálňou"
+                    />
+                </div>
+                <div class="col-12 col-md-6 offset-md-2">
+                    <Img
+                            url="/img/projects/chata-k/obyvacka.jpg"
+                            alt="Obývacia izba"
+                            caption="Obývacia izba"
+                    />
+                </div>
+            </div>
+
+            <ImgFullWidth
+                    url="/img/projects/chata-k/kuchyna-obyvacka.jpg"
+                    alt="Kuchyňa s obývacou izbou"
+            />
+
+            <div class="row">
+
+
+
+                <div class="col-12 col-md-6 offset-md-6">
+                    <Img
+                        url="/img/projects/chata-k/kuchyna-obyvacka2.jpg"
+                        alt="Kuchyňa s obývacou izbou"
+                        caption="Kuchyňa s obývacou izbou"
+                    />
+                </div>
+                <div class="col-12 col-md-8">
+                    <Img
+                            url="/img/projects/chata-k/obyvacka2.jpg"
+                            alt="Obývacia izba"
+                            caption="Obývacia izba"
+                    />
+                </div>
+            </div>
+
+
+        </div>
+    </ProjectLayout>

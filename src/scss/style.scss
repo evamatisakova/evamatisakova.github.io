@@ -114,10 +114,9 @@ nav {
   width: 100%;
 
   @media (min-width: $breakpoint-tablet) {
-    width: calc(100% + 4rem + 30px);
-
-    margin-left: calc(-2rem + -15px);
-    margin-right: calc(-2rem + -15px);
+    width: calc(100% + $grid-gutter-width);
+    margin-left: -0.5 * $grid-gutter-width;
+    margin-right: -0.5 * $grid-gutter-width;
   }
 
   img{
@@ -139,7 +138,7 @@ nav {
   }
 }
 
-//@import "simplelightbox/src/simple-lightbox";
+@import "simplelightbox/src/simple-lightbox";
 
 #o-mne {
   background: white;
@@ -264,7 +263,7 @@ main.project {
   h1 {
     font-size: 3rem;
     @media (min-width: $breakpoint-tablet) {
-      font-size: 5vw;
+      font-size: 8vw;
       margin-bottom: 4rem;
     }
 
