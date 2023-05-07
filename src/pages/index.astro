@@ -589,6 +589,57 @@ import Navbar from "../components/Navbar.astro";
             </div>
         </section>
     </main>
+
+    <script>
+        var loaderSVGLayer = document.querySelector("#loader svg g");
+
+        const hideLoader = () => {
+            var loader = document.querySelector("#loader");
+            var loaderSVG = document.querySelector("#loader svg");
+
+            loaderSVG.classList.add('hidden');
+            setTimeout(() => {
+                loaderSVG.remove();
+
+                if (!loader) return;
+
+                loader.classList.add('hidden');
+                setTimeout(() => {
+                    loader.remove();
+                }, 1500)
+
+            }, 500)
+
+
+        }
+
+        if (loaderSVGLayer) {
+            var animationEnded = false;
+            var imagesLoaded = false;
+
+
+            setTimeout(() => {
+                hideLoader();
+            }, 2500)
+
+            window.addEventListener('load', function () {
+
+                imagesLoaded = true;
+
+                if (animationEnded) {
+                    hideLoader();
+                }
+            })
+
+            loaderSVGLayer.addEventListener('animationend', function () {
+                animationEnded = true;
+
+                if (imagesLoaded) {
+                    hideLoader();
+                }
+            })
+        }
+    </script>
 </Layout>
 
 
