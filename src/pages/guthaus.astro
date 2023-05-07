@@ -12,7 +12,7 @@ import ImgFullWidth from "../components/ImgFullWidth.astro";
         navBackground="light"
         title="Guthaus | Eva.Matisakova"
         img={{
-            src: "/img/projects/guthaus/main.png",
+            src: "/img/projects/guthaus/main.jpg",
             alt: "Guthaus cover photo"
         }}
     >
@@ -42,16 +42,21 @@ import ImgFullWidth from "../components/ImgFullWidth.astro";
                 </div>
 
                 <div class="col-12 col-md-8">
-                    <Img
-                        url="/img/projects/guthaus/render-obyvacia-izba.png"
-                        alt="Obývacia izba"
-                        caption="Obývacia izba"
-                    />
+                    <div class="img-flip" data-time="800">
+                        <figure>
+                            <img class="img-fluid" src="/img/projects/guthaus/render-obyvacia-izba-1.jpg" alt="Obývacia izba"/>
+                            <figcaption><small>Obývacia izba</small></figcaption>
+                        </figure>
+                        <figure class="d-none">
+                            <img class="img-fluid" src="/img/projects/guthaus/render-obyvacia-izba-2.jpg" alt="Obývacia izba"/>
+                            <figcaption><small>Obývacia izba</small></figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
 
             <ImgFullWidth
-                url="/img/projects/guthaus/render.png"
+                url="/img/projects/guthaus/render.jpg"
                 alt="Kuchyňa"
             />
 
@@ -62,7 +67,7 @@ import ImgFullWidth from "../components/ImgFullWidth.astro";
             <div class="row">
                 <div class="col-12 col-md-8">
                     <Img
-                        url="/img/projects/guthaus/render-spalna-1.png"
+                        url="/img/projects/guthaus/render-spalna-1.jpg"
                         alt="Spálňa"
                         caption="Spálňa"
                     />
@@ -71,21 +76,21 @@ import ImgFullWidth from "../components/ImgFullWidth.astro";
             <div class="row">
                 <div class="col-12 col-md-4 offset-md-8">
                     <Img
-                        url="/img/projects/guthaus/render-spalna-2.png"
+                        url="/img/projects/guthaus/render-spalna-2.jpg"
                         alt="Spálňa"
                         caption="Spálňa"
                     />
                 </div>
                 <div class="col-12 col-md-4 mt-n15vw">
                     <Img
-                        url="/img/projects/guthaus/render-kupelna-1.png"
+                        url="/img/projects/guthaus/render-kupelna-1.jpg"
                         alt="Kúpeľňa"
                         caption="Kúpeľňa"
                     />
                 </div>
                 <div class="col-12 col-md-6 offset-md-2 mt-10vw">
                     <Img
-                        url="/img/projects/guthaus/render-kupelna-2.png"
+                        url="/img/projects/guthaus/render-kupelna-2.jpg"
                         alt="Kúpeľňa"
                         caption="Kúpeľňa"
                     />
@@ -95,7 +100,7 @@ import ImgFullWidth from "../components/ImgFullWidth.astro";
             <div class="row">
                 <div class="col-12 col-md-8">
                     <Img
-                        url="/img/projects/guthaus/render-chodba.png"
+                        url="/img/projects/guthaus/render-chodba.jpg"
                         alt="Vstupná chodba"
                         caption="Vstupná chodba"
                     />
