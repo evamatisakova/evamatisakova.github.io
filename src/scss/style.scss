@@ -64,6 +64,11 @@ $container-max-widths: (
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
+.container-fluid{
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 
 .navbar-brand {
   padding: 0;
