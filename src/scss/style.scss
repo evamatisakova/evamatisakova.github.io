@@ -166,13 +166,15 @@ nav {
     & > div {
       margin: auto auto auto 0;
 
-      h1 {
+      h2 {
+        font-family: "Gatwick", serif;
+        font-weight: normal;
         text-align: center;
         margin-bottom: 1.5rem;
 
         font-size: 3rem;
         @media (min-width: $breakpoint-tablet) {
-          font-size: 10.5vw;
+          font-size: 13rem;
         }
 
         // <br/>
