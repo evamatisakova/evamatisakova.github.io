@@ -312,3 +312,14 @@ main.project {
 .navbar .navbar-toggler{
   border: none;
 }
+
+
+.container-fluid figure img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container-fluid figure:hover img {
+  opacity: .75;
+}
