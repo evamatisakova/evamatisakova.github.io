@@ -189,10 +189,11 @@ nav {
     }
 
     img {
-      max-width: 40%;
+      width: 100%;
       height: auto;
 
       @media (min-width: $breakpoint-tablet) {
+        max-width: 40%;
         position: absolute;
         right: 0;
         top: 0;
