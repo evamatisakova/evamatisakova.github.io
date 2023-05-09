@@ -314,12 +314,15 @@ main.project {
 }
 
 
-.container-fluid figure img {
-  opacity: 1;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
+main.home .container-fluid{
+  figure img {
+    filter: blur(0);
 
-.container-fluid figure:hover img {
-  opacity: .75;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  figure:hover img {
+    filter: saturate(50%);;
+  }
 }
